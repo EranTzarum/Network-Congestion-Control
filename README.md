@@ -1,4 +1,4 @@
- Congestion Control
+ #Congestion Control
 
  we will explore the differences between Congestion Control (hereafter: "CC") algorithms, specifically, between "cubic", which is the deductive one, and "reno".
 
@@ -24,7 +24,3 @@
  *commend: sudo tc qdisc del dev lo root netem*
 
  !!*You can run the code only in a full Linux environment and not through Windows or WSL*!!
- 
-
- 
-done
