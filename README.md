@@ -7,6 +7,7 @@
 
 use advantage of DoH:
 DoH  helps to prevent DNS spoofing and man-in-the-middle (MitM) attacks. 
+
 In other words, because the session between the browser and the DNS server is encrypted, nobody can alter the resolution request results to point the user's browser toward a fraudulent website.  
 
 ## Two disadvantages to using the method:
@@ -18,7 +19,9 @@ In other words, because the session between the browser and the DNS server is en
 
 ## Proposal for a solution for disadvantages number 2: 
 In disadvantage number 2 the problem is that for example, visiting www.example.com will require queries to both the .com and the example.com DNS servers in order to resolve the request.
-Some browsers will take a “greedy” approach to this, requesting the entire domain name at each level in hopes of skipping a few steps. As a result, every DNS server knows the eventual destination of the traffic.
+Some browsers will take a “greedy” approach to this, requesting the entire domain name at each level in hopes of skipping a few steps.
+As a result, every DNS server knows the eventual destination of the traffic.
+
 however, this can be mitigated using DNS minimization.
 
 ## DoH methods comparisons table:
