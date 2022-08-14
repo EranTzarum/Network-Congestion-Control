@@ -19,7 +19,9 @@ In other words, because the session between the browser and the DNS server is en
 
 ## Proposal for a solution for disadvantages number 2: 
 In disadvantage number 2 the problem is that for example, visiting www.example.com will require queries to both the .com and the example.com DNS servers in order to resolve the request.
+
 Some browsers will take a “greedy” approach to this, requesting the entire domain name at each level in hopes of skipping a few steps.
+
 As a result, every DNS server knows the eventual destination of the traffic.
 
 however, this can be mitigated using DNS minimization.
@@ -78,30 +80,56 @@ From what we know DoH uses the TCP protocol - this protocol provides reliability
  **commend: sudo tc qdisc del dev lo root netem**
 
  !!**You can run the code only in a full Linux environment and not through Windows or WSL**!!
-
- Screenshots:
-
- No packet loss code run:
-
- wireshark:
-
- 10% loss:
- 10% loss wireshark:
  
- 15% loss:
- 15% loss wireshark:
 
- 20% loss:
- 20% loss wireshark:
+ # Screenshots:
 
- 25% loss:
- 25% loss wireshark:
-
- Performance graph:
+ ## No packet loss code run:
+ 
+ ![measure_sender](https://user-images.githubusercontent.com/106338500/184532237-4053d51b-49dd-4a59-9dbe-3d65bbdc9d4c.png)
 
 
+ ## wireshark:
+ 
+ ![measure_sender_wiresharke](https://user-images.githubusercontent.com/106338500/184532258-18d3c50d-3447-4a2c-b37e-93487299a793.png)
 
 
+ ## 10% loss:
+ 
+![10%](https://user-images.githubusercontent.com/106338500/184532263-08ab4f38-1e4f-4f45-bb8b-d3bb68f98e02.png)
 
+ 
+ ## 10% loss wireshark:
+ 
+ ![10_w](https://user-images.githubusercontent.com/106338500/184532266-70fa6c68-e1a2-4dda-9677-01b77ccda34c.png)
 
+ 
+ ## 15% loss:
+ 
+ ![15%](https://user-images.githubusercontent.com/106338500/184532269-c53fe32e-0952-4189-b7fd-e050203fa6bb.png)
+
+ ## 15% loss wireshark:
+ 
+ ![15_w](https://user-images.githubusercontent.com/106338500/184532278-387bb75a-e199-46e0-ad79-3c4148108e3b.png)
+ 
+ ## 20% loss:
+ 
+ ![20%](https://user-images.githubusercontent.com/106338500/184532288-a404b012-3269-4ae4-92d3-9455ccd21691.png)
+
+ ## 20% loss wireshark:
+ 
+  ![20_w](https://user-images.githubusercontent.com/106338500/184532295-aa9ac1a0-b1d0-48b8-9fe6-b6842bf53aad.png)
+
+ ## 25% loss:
+ 
+ ![25%](https://user-images.githubusercontent.com/106338500/184532305-dd493c00-9df9-4d43-93dd-5fbf319daf6e.png)
+
+ ## 25% loss wireshark:
+ 
+ ![25_w](https://user-images.githubusercontent.com/106338500/184532318-198312fe-d0f9-4e87-a3fa-443f9cf16470.png)
+
+ ## Performance graph:
+ 
+ 
+![graph](https://user-images.githubusercontent.com/106338500/184532337-40f221fd-4e84-4727-ae35-f2f26c730329.png)
 
