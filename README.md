@@ -27,36 +27,12 @@ however, this can be mitigated using DNS minimization.
 
 
 
-| ------------- | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-
-
+| ------------- | DoH-application layer  | DoH-proxy server | DoH-proxy local server  | plugin that implements DoH  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Advantages  | DoH respecting the intent of the standard which Provides privacy in DNS  | No need to perform any Another action to work with DoH  | No need to perform any Another action to work with DoH. Mainly suitable for organizations  | Suited for individual users  |
+| Disadvantages  | DoH - in the application layer, browsers and other software would bypass traditional DNS and use port 443 to make encrypted requests  | The downside is that the DNS queries still do not come out Encrypted, until you reach the external proxy server  | Is necessary to run the local proxy server. The queries come out encrypted, though they "roam" the unencrypted local network  | The downside is that if we want an organization to work In this way we will have to reconfigure each computer  |
 
 
-
-
-
-
-| ------------- | DoH- application layer  | DoH-
-proxy server
- | DoH-
-proxy local server
- | plugin that implements DoH |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| Advantages  | DoH respecting the intent of the standard which Provides privacy in DNS  | No need to perform any
-Another action to work with DoH
- | No need to perform any
-Another action to work with DoH.
-Mainly suitable for organizations | Suited for individual users |
-| Disadvantages | DoH - in the application layer, browsers and other software would bypass traditional DNS and use port 443 to make encrypted requests  | The downside is that the DNS queries still do not come out
-Encrypted, until you reach the external proxy server
- | Is necessary to run the local proxy server.
-The queries come out encrypted, though they "roam" the unencrypted local network
- | The downside is that if we want an organization to work
-In this way we will have to reconfigure each computer
- |
 
 
  We think that the **DoH in the application layer** is the best method.
