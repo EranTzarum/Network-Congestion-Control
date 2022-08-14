@@ -27,7 +27,9 @@ however, this can be mitigated using DNS minimization.
 
 
 
-| ------------- | First Header  | Second Header | First Header  | Second Header |
+| ------------- | DoH- application layer | DoH-
+proxy server | DoH-
+proxy local server | plugin that implements DoH |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
