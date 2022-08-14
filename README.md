@@ -23,6 +23,20 @@ however, this can be mitigated using DNS minimization.
 
 ## DoH methods comparisons table:
 
+
+
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+
+
+
+
 |           | DoH- application layer  | DoH-
 proxy server
  | DoH-
