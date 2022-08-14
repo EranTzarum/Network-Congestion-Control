@@ -37,7 +37,7 @@ however, this can be mitigated using DNS minimization.
 
 
 
-|           | DoH- application layer  | DoH-
+| ------------- | DoH- application layer  | DoH-
 proxy server
  | DoH-
 proxy local server
